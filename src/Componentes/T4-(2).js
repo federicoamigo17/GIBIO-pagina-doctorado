@@ -1,39 +1,17 @@
 import React, { useState } from "react";
 
 function TablaCuatro() {
-    const [circunstancias, setCircunstancias] = useState([]);
-    const [Otros, setOtros] = useState("");
-    const [actividades, setActividades] = useState({
-        bibliografica: false,
-        cursosPostgrado: false,
-        desarrolloExperimental: false,
-        asistenciaCongresos: false,
-        comunicaciones: false,
-        manuscritos: false,
-        publicacionArticulos: false,
-        presentaciones: false,
-        pasantias: false,
-        formacionrrhh: false,
-        participacion: false,
-        premios: false,
-      });
-      const [plazoTesis, setPlazoTesis] = useState("");
-      const [actividadesfuturas, setActividadesFuturas] = useState({
-        cursosFut: false,
-        revisionFut: false,
-        experimentosFut: false,
-        infoFut: false,
-        tesisFut: false,
-      });
+  const [circunstancias, setCircunstancias] = useState([]);
+  const [Otros, setOtros] = useState("");
 
-    const handleSubmit = (event) => {
-        event.preventDefault(); 
-    };    
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
-return (  
-<div>
-  <form onSubmit={handleSubmit}>
-  <h4>
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <h4>
           (2)Si respondió "poco satisfactorio" o "no satisfactorio", indique las
           circunstancias o problemas que causaron este grado de avance (marcar
           con una cruz):
@@ -202,10 +180,9 @@ return (
             onChange={(e) => setOtros(e.target.value)}
           />
         </label>
-  </form>
-</div>
-);
+      </form>
+    </div>
+  );
 }
-
 
 export default TablaCuatro;

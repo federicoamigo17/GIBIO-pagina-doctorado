@@ -3,6 +3,7 @@ import TablaUno from './Componentes/T1-DatosTesista';
 import TablaDos from './Componentes/T2-Requisitos';
 import TablaTres from './Componentes/T3-(1)';
 import TablaCuatro from './Componentes/T4-(2)';
+import TablaCinco from './Componentes/T5-(3)';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <TablaDos />
         <TablaTres />
         <TablaCuatro />
+        <TablaCinco />
       </div></>
   );
 }

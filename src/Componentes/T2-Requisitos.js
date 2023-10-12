@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 function TablaDos() {
-    const [creditosReconocidos, setCreditosReconocidos] = useState("");
-    const [pruebaIdioma, setPruebaIdioma] = useState("");
-    const [requisitoRequisito, setRequisitoRequisito] = useState(false);
-    const [requisitoArticulo, setRequisitoArticulo] = useState(false);
-    const [requisitoTransferencia, setRequisitoTransferencia] = useState(false);
-    const [requisitoPatente, setRequisitoPatente] = useState(false);
-    const [reconocidoRectorado, setReconocidoRectorado] = useState("");
+  const [creditosReconocidos, setCreditosReconocidos] = useState("");
+  const [pruebaIdioma, setPruebaIdioma] = useState("");
+  const [requisitoRequisito, setRequisitoRequisito] = useState(false);
+  const [requisitoArticulo, setRequisitoArticulo] = useState(false);
+  const [requisitoTransferencia, setRequisitoTransferencia] = useState(false);
+  const [requisitoPatente, setRequisitoPatente] = useState(false);
+  const [reconocidoRectorado, setReconocidoRectorado] = useState("");
 
-    const handleSubmit = (event) => {
-        event.preventDefault(); 
-    };    
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
-return (  
-<div>
-  <form onSubmit={handleSubmit}>
-  <h3>Requisitos de graduación:</h3>
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <h3>Requisitos de graduación:</h3>
         <label>
           Número de créditos reconocidos por Rectorado:
           <input
@@ -84,11 +84,9 @@ return (
             onChange={(e) => setReconocidoRectorado(e.target.value)}
           />
         </label>
-    
-  </form>
-</div>
-);
+      </form>
+    </div>
+  );
 }
-
 
 export default TablaDos;

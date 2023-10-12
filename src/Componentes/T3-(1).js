@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 
 function TablaTres() {
-    const [contribucionUltimoAnio, setContribucionUltimoAnio] = useState("");    const [circunstancias, setCircunstancias] = useState([]);
+  const [contribucionUltimoAnio, setContribucionUltimoAnio] = useState("");
+  const [circunstancias, setCircunstancias] = useState([]);
 
-    const handleSubmit = (event) => {
-        event.preventDefault(); 
-    };    
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
-return (  
-<div>
-  <form onSubmit={handleSubmit}>
-  <h4>
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <h4>
           (1) En función del cronograma presentado en el plan de trabajo del/la
           Tesista, ¿en qué medida contribuyó el trabajo desarrollado en el
           último año al cumplimiento de los objetivos propuestos en el plan de
@@ -48,10 +49,9 @@ return (
           />
           No satisfactorio
         </label>
-  </form>
-</div>
-);
+      </form>
+    </div>
+  );
 }
-
 
 export default TablaTres;
