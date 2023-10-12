@@ -5,6 +5,7 @@ import TablaTres from "./Componentes/T3-(1)";
 import TablaCuatro from "./Componentes/T4-(2)";
 import TablaCinco from "./Componentes/T5-(3)";
 import TablaSeis from "./Componentes/T6-(4)";
+import TablaSiete from "./Componentes/T7-(5)";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <TablaCuatro />
         <TablaCinco />
         <TablaSeis />
+        <TablaSiete />
       </div>
     </>
   );
