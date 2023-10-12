@@ -6,6 +6,7 @@ import TablaCuatro from "./Componentes/T4-(2)";
 import TablaCinco from "./Componentes/T5-(3)";
 import TablaSeis from "./Componentes/T6-(4)";
 import TablaSiete from "./Componentes/T7-(5)";
+import PdfGenerator from "./GeneradorPDF";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <TablaCinco />
         <TablaSeis />
         <TablaSiete />
+        <PdfGenerator />
       </div>
     </>
   );
