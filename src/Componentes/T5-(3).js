@@ -15,14 +15,6 @@ function TablaCinco() {
     participacion: false,
     premios: false,
   });
-  const [plazoTesis, setPlazoTesis] = useState("");
-  const [actividadesfuturas, setActividadesFuturas] = useState({
-    cursosFut: false,
-    revisionFut: false,
-    experimentosFut: false,
-    infoFut: false,
-    tesisFut: false,
-  });
   const handleSubmit = (event) => {
     event.preventDefault();
   };
