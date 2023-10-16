@@ -5,3 +5,4 @@ Objetivos:
   -Backend y css identico al de UTN
   -Consultar con alguien el tema de optimizacion y buenas practicas
   -Averiguar como deployar correctamente el proyecto
+probar con https://ar.000webhost.com/
