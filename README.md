@@ -2,5 +2,6 @@ Esta pagina corresponde a un informe de seguimiento que realiza un doctor sobre 
 
 Objetivos:
   -Formato correcto al guardar el PDF
-  -Backend y css
+  -Backend y css identico al de UTN
+  -Consultar con alguien el tema de optimizacion y buenas practicas
     
