@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Componentes/Header";
 import TablaUno from "./Componentes/T1-DatosTesista";
 import TablaDos from "./Componentes/T2-Requisitos";
 import TablaTres from "./Componentes/T3-(1)";
@@ -11,6 +12,7 @@ import PdfGenerator from "./GeneradorPDF";
 function App() {
   return (
     <>
+    <Header />
       <div>
         <h1>Planilla Informe Avance</h1>
         <h2>DOCTORADO EN INGENIERIA</h2>
