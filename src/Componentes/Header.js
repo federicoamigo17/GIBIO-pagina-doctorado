@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import logo from "../img/logo2utn.png";
 
 function Header() {
-
   return (
     <div>
-    <h1>sexo</h1>
-    <img src="../img/logo_utn" alt="Logo" width="100" height="100"/>
+      <img src={logo} alt="Logo"/>
     </div>
   );
 }

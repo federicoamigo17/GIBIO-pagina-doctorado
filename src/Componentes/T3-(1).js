@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function TablaTres() {
   const [contribucionUltimoAnio, setContribucionUltimoAnio] = useState("");
-  const [circunstancias, setCircunstancias] = useState([]);
+//  const [circunstancias, setCircunstancias] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
