@@ -1,0 +1,11 @@
+.titulo-pagina{
+    color: #c41234;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    line-height: 110%;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 50px 0;
+}
