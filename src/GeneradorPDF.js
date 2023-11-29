@@ -20,15 +20,9 @@ function PdfGenerator() {
   };
 
   return (
-    <div>
-      <button onClick={handleGeneratePDF}>Generar PDF de la página</button>
-      <iframe
-        ref={contentRef}
-        title="Contenido a exportar"
-        src="/ruta-a-tu-pagina"
-        style={{ display: "none" }}
-      />
-    </div>
+    <span onClick={handleGeneratePDF} style={{ cursor: "pointer", textDecoration: "underline", color: "white" }}>
+      Descargar como PDF
+    </span>
   );
 }
 

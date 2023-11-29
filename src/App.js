@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Componentes/Header";
 import Menu from "./Componentes/Menu";
+import Titulo from "./Componentes/Titulo";
 import TablaUno from "./Componentes/T1-DatosTesista";
 import TablaDos from "./Componentes/T2-Requisitos";
 import TablaTres from "./Componentes/T3-(1)";
@@ -15,11 +16,7 @@ function App() {
     <>
     <Header />
     <Menu />
-      <div>
-        <h1>Planilla Informe Avance</h1>
-        <h2>DOCTORADO EN INGENIERIA</h2>
-        <h3>Informe anual del director</h3>
-      </div>
+    <Titulo />
       <div>
         <TablaUno />
         <TablaDos />
