@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/logo2utn.png";
+import '../css/Estilos.css';
 
 function Header() {
   return (

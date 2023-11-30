@@ -1,7 +1,9 @@
 import React from "react";
 import PdfGenerator from "../GeneradorPDF";
+import '../css/Estilos.css';
 
-function Menu() {
+
+function Footer() {
   return (
     <div className="menu">
       <h1><PdfGenerator /></h1>  
@@ -9,4 +11,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Footer;
