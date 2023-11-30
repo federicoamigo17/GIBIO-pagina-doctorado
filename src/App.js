@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Header />
-    <Menu />
+  
     <Titulo />
       <div>
         <TablaUno />
@@ -25,7 +25,7 @@ function App() {
         <TablaCinco />
         <TablaSeis />
         <TablaSiete />
-        <PdfGenerator />
+        <Menu />
       </div>
     </>
   );

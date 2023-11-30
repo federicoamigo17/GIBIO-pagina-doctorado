@@ -1,3 +1,33 @@
+/* : Estilos para el Header */
+.header {
+    display: flex;
+    width: 100%;
+    margin-left: 20px; 
+}
+
+.header .logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+/* : Estilos para el Menu */
+
+.menu {
+    width: 100%;
+    min-height: 66px;
+    display: flex;
+    background-color: #2F3336;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
 .titulo-pagina{
     color: #c41234;
     text-transform: uppercase;
@@ -7,5 +37,23 @@
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    padding: 50px 0;
+
+}
+
+.titulo-pagina h1{
+    margin-bottom: 0.5rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+
+}
+
+.titulo-pagina::after{
+    width: 28%;
+    display: block;
+    margin: auto;
+    content: "";
+    height: 5px;
+    background: #c41234;
 }

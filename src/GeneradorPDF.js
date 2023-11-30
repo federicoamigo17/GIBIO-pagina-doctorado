@@ -1,28 +1,32 @@
-import React, { useRef } from "react";
+import React from "react";
 import { jsPDF } from "jspdf";
 
 function PdfGenerator() {
-  const contentRef = useRef(null);
-
   const handleGeneratePDF = () => {
-    const { contentWindow } = contentRef.current;
+    // Obtener el contenido de la página
+    const content = document.body;
 
-    // Crear un objeto jsPDF
-    const doc = new jsPDF();
+    // Crear un objeto jsPDF con dimensiones personalizadas
+    const pdf = new jsPDF({
+      unit: "px",   // Unidades en píxeles
+      format: [1000, 1400],  // Dimensiones personalizadas (ancho x alto)
+    });
 
-    // Capturar el contenido de la página en el objeto jsPDF
-    doc.html(contentWindow.document.body, {
+    // Agregar el contenido al PDF
+    pdf.html(content, {
       callback: () => {
         // Guardar el PDF con un nombre
-        doc.save("pagina.pdf");
-      }
+        pdf.save("pagina.pdf");
+      },
     });
   };
 
   return (
-    <span onClick={handleGeneratePDF} style={{ cursor: "pointer", textDecoration: "underline", color: "white" }}>
-      Descargar como PDF
-    </span>
+    <div>
+      <button onClick={handleGeneratePDF}>
+        Generar y Descargar PDF de la Página
+      </button>
+    </div>
   );
 }
 
