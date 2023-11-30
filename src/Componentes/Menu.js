@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/Header.css";
 import PdfGenerator from "../GeneradorPDF";
 
 function Menu() {
